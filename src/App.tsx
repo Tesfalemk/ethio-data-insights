@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/sonner';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-white font-sans selection:bg-teal-100 selection:text-teal-900">
       <Navigation />
       <main>
         <Hero />

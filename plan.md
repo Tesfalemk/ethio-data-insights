@@ -1,32 +1,28 @@
-# Plan for Alta Analytics & Consultancy Landing Page
+# Update Styling and Branding for Alta Analytics & Consultancy
 
-Build a professional, tech-enabled landing page for Alta Analytics & Consultancy based in Addis Ababa, Ethiopia.
+Apply a new color palette and branding based on the company logo.
 
-## 1. Components to Create
-- **Navbar**: Sticky navigation with links to Services, About, Pricing, and Contact.
-- **Hero**: Catchy headline "Turning Data into Growth", description, and primary CTA. Background with generated data viz image.
-- **MissionVision**: Section detailing the mission and vision of the company.
-- **Services**: Grid showing the 5 core services:
-    - Market Research & Data Collection
-    - Business Analytics & Dashboards
-    - Sector-Specific Research Reports
-    - Digital Transformation Consultancy
-    - Impact Evaluation for NGOs
-- **MarketAnalysis**: A "Why Ethiopia?" section with industry stats and market potential.
-- **Pricing**: Clear pricing tiers for project-based, subscription, training, and fixed fees.
-- **Founder**: Profile section for Tesfalem Desta with a professional portrait.
-- **CTA/Contact**: Final call to action with a contact form powered by Sonner for notifications.
-- **Footer**: Detailed links and business info.
+## 1. Color Palette Extraction
+- **Primary Teal**: `#0D9488` (Extracted from logo background and elements)
+- **Secondary Dark Gray**: `#1F2937` (Extracted from logo elements)
+- **Accent White**: `#FFFFFF` (Extracted from logo text and elements)
 
-## 2. Technical Implementation
-- **Framework**: React 19 + Vite.
-- **Styling**: Tailwind CSS (Utility-first).
-- **Icons**: Lucide-React.
-- **Animations**: Framer Motion for entrance animations.
-- **UI Components**: Shadcn UI (Card, Button, Input, Textarea, Badge).
-- **Responsiveness**: Mobile-first design, fully responsive layout.
+## 2. Global Styling Updates
+- Update `src/index.css` to include the new brand colors in the Tailwind theme.
+- Define `--color-brand-teal` and `--color-brand-dark` for consistent usage.
+- Update global text and background defaults to align with the new palette.
 
-## 3. Visual Design
-- **Color Palette**: Professional Blue (#2563EB), Slate (#0F172A), and Clean White (#FFFFFF).
-- **Typography**: Inter for clean, modern readability.
-- **Images**: Use the generated high-quality assets for data viz, research, and founder.
+## 3. Component Branding
+- **Logo Integration**: Update `Navigation.tsx` and `Footer.tsx` to use the provided logo image URL.
+- **Color Replacement**:
+    - Replace all `blue-600` instances with `brand-teal`.
+    - Replace `blue-100` background accents with `brand-teal/10`.
+    - Replace `slate-900` headings/text with `brand-dark`.
+    - Ensure buttons and hover states use the new teal primary color.
+- **Hero Section**: Adjust the gradient and badge colors to match the new branding.
+- **Market Analysis**: Update the dark section to use `brand-dark` and the accent borders to use `brand-teal`.
+- **Pricing**: Update the "Most Popular" badge and button colors.
+- **Contact**: Update icon backgrounds and submit button colors.
+
+## 4. Assets
+- Logo URL: `https://storage.googleapis.com/dala-prod-public-storage/attachments/f70f5978-9e0c-4b86-b536-713e6d34dff0/1778502918049_photo_2026-05-11_15-35-06.jpg`
